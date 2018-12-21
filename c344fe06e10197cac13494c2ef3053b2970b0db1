@@ -1,0 +1,146 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c2af53f5_c683e3a3",
+        "filename": "BaseProject.pro",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "Remove this define as it is not set here",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "46cd2dfa_7947dc95",
+        "filename": "BaseProject.pro",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "also this one remove it",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5c1af65f_91c9a7a4",
+        "filename": "main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "this you added or by default it came with project creation",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 18
+      },
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "98cd1be8_c1deb183",
+        "filename": "main.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "Intendation is wrong for this component",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a921243_5fa139e0",
+        "filename": "main.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d838956e_36d9f711",
+        "filename": "main.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "44beae98_8261bfb6",
+        "filename": "main.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fcf701f3_53fae59b",
+        "filename": "main.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-21T22:08:58Z",
+      "side": 1,
+      "message": "All Rows 1 to 8 look like repeating same component with just different data. \nLook at listview (http://doc.qt.io/qt-5/qml-qtquick-listview.html) and try to use it",
+      "revId": "c344fe06e10197cac13494c2ef3053b2970b0db1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
