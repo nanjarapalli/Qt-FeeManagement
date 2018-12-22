@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Framework/FWButton.qml</file>
+        <file>Framework/FWButtonNoText.qml</file>
+        <file>Framework/FWComboBox.qml</file>
+        <file>Framework/FWComboxDropDown.qml</file>
+        <file>Framework/FWRadioButton.qml</file>
+        <file>Framework/FWScrollBar.qml</file>
+        <file>Framework/FWSlider.qml</file>
+        <file>Framework/FWTheme.qml</file>
+        <file>Framework/qmldir</file>
+        <file>src/Alert.qml</file>
+        <file>src/Footer.qml</file>
+        <file>src/Info.qml</file>
+        <file>src/InfoAccessSettings.qml</file>
+        <file>src/InfoOverlay.qml</file>
+        <file>src/InfoSortDetails.qml</file>
+        <file>src/InfoSortTitle.qml</file>
+        <file>src/Navigation.qml</file>
+        <file>src/NavigationDelegate.qml</file>
+        <file>src/SearchBar.qml</file>
+        <file>src/FeeManagement.qml</file>
+        <file>src/InfoStudentDetail.qml</file>
+        <file>src/InfoStudentEdit.qml</file>
+        <file>src/InfoStudentList.qml</file>
+        <file>src/Student.qml</file>
+        <file>src/StudentArea.qml</file>
+        <file>src/StudentDragDrop.qml</file>
+        <file>src/StudentFilter.qml</file>
+        <file>src/StudentInsertOverlay.qml</file>
+        <file>src/StudentList.qml</file>
+        <file>main.qml</file>
+        <file>src/ContentArea.qml</file>
+    </qresource>
+</RCC>

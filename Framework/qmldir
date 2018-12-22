@@ -1,0 +1,9 @@
+module Framework
+singleton FWTheme 1.0 FWTheme.qml
+FWButton 1.0 FWButton.qml
+FWButtonNoText 1.0 FWButtonNoText.qml
+FWComboBox 1.0 FWComboBox.qml
+FWComboxDropDown 1.0 FWComboxDropDown.qml
+FWRadioButton 1.0 FWRadioButton.qml
+FWSlider 1.0 FWSlider.qml
+FWScrollBar 1.0 FWScrollBar.qml
