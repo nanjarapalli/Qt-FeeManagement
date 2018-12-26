@@ -2,25 +2,14 @@
     <qresource prefix="/">
         <file>Images/ico-add.png</file>
         <file>Images/ico-arrow-move.png</file>
-        <file>Images/ico-cancel.png</file>
         <file>Images/ico-close.png</file>
         <file>Images/ico-confirm.png</file>
         <file>Images/ico-delete.png</file>
         <file>Images/ico-edit.png</file>
         <file>Images/ico-group.png</file>
         <file>Images/ico-info.png</file>
-        <file>Images/ico-interact.png</file>
-        <file>Images/ico-no-access.png</file>
-        <file>Images/ico-password.png</file>
         <file>Images/ico-search.png</file>
-        <file>Images/ico-sort.png</file>
-        <file>Images/ico-sort-asc.png</file>
-        <file>Images/ico-sort-desc.png</file>
-        <file>Images/ico-triangle-open.png</file>
         <file>Images/ico-user.png</file>
-        <file>Images/ico-user-add.png</file>
-        <file>Images/ico-user-move.png</file>
-        <file>Images/ico-user-remove.png</file>
         <file>Images/frame-dashed.png</file>
         <file>Images/ico-error.png</file>
     </qresource>

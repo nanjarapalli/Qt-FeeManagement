@@ -12,7 +12,6 @@
         <file>src/Alert.qml</file>
         <file>src/Footer.qml</file>
         <file>src/Info.qml</file>
-        <file>src/InfoAccessSettings.qml</file>
         <file>src/InfoOverlay.qml</file>
         <file>src/InfoSortDetails.qml</file>
         <file>src/InfoSortTitle.qml</file>
@@ -31,5 +30,6 @@
         <file>src/StudentList.qml</file>
         <file>main.qml</file>
         <file>src/ContentArea.qml</file>
+        <file>src/Database.js</file>
     </qresource>
 </RCC>
