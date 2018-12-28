@@ -26,4 +26,18 @@ Rectangle {
             Qt.quit()
         }
     }
+    FWButton {
+        id: payBtn
+        anchors.left : parent.left
+        anchors.leftMargin: 40
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("PayFee")
+//        img: "qrc:/Images/ico-cancel.png"
+        inActive: disableOnEditMode
+        color: "#6699ff"
+        onButtonClicked: {
+            console.log("Pay Button is Clicked")
+//            Qt.quit()
+        }
+    }
 }
