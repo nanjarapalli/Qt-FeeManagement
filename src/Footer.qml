@@ -26,4 +26,16 @@ Rectangle {
             Qt.quit()
         }
     }
+    FWButton {
+        id: payBtn
+        anchors.left : parent.left
+        anchors.leftMargin: 40
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("PayFee")
+        inActive: disableOnEditMode
+        color: "#6699ff"
+        onButtonClicked: {
+            console.log("Pay Button is Clicked")
+        }
+    }
 }
