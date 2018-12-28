@@ -8,20 +8,6 @@ Rectangle {
     color: FWTheme.navigationArea.backgroundColor
     property alias groupIndex : groups.currentIndex
 
-    Text {
-        id: groupTitle
-        width: parent.width
-        height: 51
-        anchors.left: parent.left
-        anchors.top: parent.top
-        verticalAlignment: Text.AlignVCenter
-        anchors.leftMargin: 20
-        text: qsTr("GROUPS")
-        font.family: FWTheme.fontFamily
-        font.pixelSize: FWTheme.navigationArea.fontSize
-        color: FWTheme.navigationArea.titleTextColor
-        elide: Text.ElideRight
-    }
 
     Rectangle {
         id: rightBorder
@@ -35,7 +21,8 @@ Rectangle {
         id: _allStudents
         width: parent.width
         height: FWTheme.navigationArea.itemHeight
-        anchors.top: groupTitle.bottom
+        anchors.top: parent.top
+        anchors.topMargin: 51
         color: groups.currentIndex === -1 ? FWTheme.navigationArea.backgroundSelected : FWTheme.navigationArea.backgroundColor
         selected: groups.currentIndex === -1 ? true : false
         iconImage: "qrc:/Images/ico-group.png"

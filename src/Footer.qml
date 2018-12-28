@@ -26,6 +26,17 @@ Rectangle {
             Qt.quit()
         }
     }
+    FWButton {
+        id: payBtn
+        anchors.left : parent.left
+        anchors.leftMargin: 40
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("PayFee")
+        inActive: disableOnEditMode
+        onButtonClicked: {
+            console.log("Pay Button is Clicked")
+        }
+    }
 
     FWButton {
         text: "New Student"
@@ -36,5 +47,4 @@ Rectangle {
         onButtonClicked: {
             mainArea.uistate = "addClass"
         }
-    }
-}
+    }}
