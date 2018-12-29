@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "bbe6a9e6_ab9504f8",
+        "filename": "src/Footer.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-29T18:46:38Z",
+      "side": 1,
+      "message": "do not use custom colors, refer to cancel button color",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 24
+      },
+      "revId": "ca718ea6a75adce8763efbce53312b1fe0ef174e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ba451f26_dbcb5e15",
         "filename": "src/Navigation.qml",
         "patchSetId": 1
