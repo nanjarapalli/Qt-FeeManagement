@@ -71,4 +71,16 @@ Rectangle {
             }
         }
     }
+    FWButton {
+        id: aboutBtn
+        anchors.right: parent.right
+        anchors.rightMargin: 40
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("About")
+        inActive: disableOnEditMode
+        color: "#6699ff"
+        onButtonClicked: {
+            console.log("About is CLicked ")
+        }
+    }
 }
