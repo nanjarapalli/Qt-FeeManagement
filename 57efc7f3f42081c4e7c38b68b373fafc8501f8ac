@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6f0c9111_d5f77516",
+        "filename": "src/SearchBar.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-29T18:45:36Z",
+      "side": 1,
+      "message": "do not use custom colors here. Use the existing button colors from style. Refer to Cancel button",
+      "range": {
+        "startLine": 81,
+        "startChar": 8,
+        "endLine": 81,
+        "endChar": 24
+      },
+      "revId": "57efc7f3f42081c4e7c38b68b373fafc8501f8ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
