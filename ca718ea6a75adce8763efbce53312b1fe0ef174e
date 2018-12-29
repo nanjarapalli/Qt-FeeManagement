@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba451f26_dbcb5e15",
+        "filename": "src/Navigation.qml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-29T18:42:16Z",
+      "side": 1,
+      "message": "this will break functionality, requirement is to just remove the group text not to adjust the button",
+      "revId": "ca718ea6a75adce8763efbce53312b1fe0ef174e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
