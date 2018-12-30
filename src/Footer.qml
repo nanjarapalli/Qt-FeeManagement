@@ -26,4 +26,15 @@ Rectangle {
             Qt.quit()
         }
     }
+
+    FWButton {
+        text: "New Student"
+        anchors.right: cancelBtn.left
+        anchors.rightMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
+        enabled: !disableOnEditMode
+        onButtonClicked: {
+            mainArea.uistate = "addClass"
+        }
+    }
 }
