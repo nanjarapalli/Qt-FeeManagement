@@ -2,7 +2,6 @@ import QtQuick 2.0
 import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.4
 import QtQml.Models 2.2
-import MUM_Models 0.1
 import "../Framework"
 Item {
     id: userList
@@ -44,7 +43,7 @@ Item {
             height: 40
             borderBottom: index === (usersListView.count - 1) ? false : true
             userName: name//"Tom Schuhmacher"
-            groupImg: icon
+            groupImg: "qrc:/Images/ico-user.png"
             MouseArea {
                 anchors.fill: parent
                 onPressed: {
@@ -144,16 +143,7 @@ Item {
         groups: [
             DelegateModelGroup { name: "selected" }
         ]
-        model: sortFilterProxyModel_Codes
+        model: studentModel
         delegate: userDelegate
-    }
-
-
-    SortFilterProxyModel {
-        id: sortFilterProxyModel_Codes
-        caseSensitiveFilter: false
-        filterRoleName: "name"
-        sortRoleName: "name"
-        sourceModel: userModel
     }
 }

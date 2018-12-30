@@ -1,12 +1,13 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.1
+import QtQuick.Dialogs 1.2
 import "../Framework"
 
 Item{
+    id: root
     width: parent.width
     height: parent.height - 50
-    property bool showUserInsertOverlay: false
     property string selectedUser: ""
     property int selectedUserIndex: 0
     property bool sortUser : false
@@ -16,15 +17,10 @@ Item{
     property string searchstring: ""
     property string groupSelected: ""
     property alias selectedGroupIndex: navigation.groupIndex
+    property alias uistate: splitZone2.state
 
-    onAddNewGroupChanged: {
-        if(addNewGroup){
-            splitZone2.state = "addGroup"
-        }
-        else
-        {
-            splitZone2.state = "closeGroup"
-        }
+    onSelectedUserChanged: {
+        uistate = "showstudentdetails"
     }
 
     SplitView {
@@ -41,12 +37,6 @@ Item{
             Navigation {
                 id: navigation
                 anchors.fill: parent
-            }
-
-            MouseArea {
-                anchors.fill: splitZone1
-                visible: (disableOnEditMode || showUserInsertOverlay)
-                onPressed: showAlertPopup(2)
             }
         }
 
@@ -73,63 +63,45 @@ Item{
                 anchors.topMargin: 52
                 width: parent.width - (details.width + 140)
                 height: parent.height - (searchArea.height)
-                opacity: showUserInsertOverlay ? 0.5 : 1
             }
 
-            MouseArea {
-                anchors.fill: parent
-                visible: disableOnEditMode
-                onPressed: showAlertPopup(2)
-            }
-
-            Info {
+            Loader {
                 id: details
                 width: 340
                 height: parent.height - (119 + searchArea.height)
                 anchors.left: userArea.right
-                anchors.leftMargin: splitZone2.state === "addGroup" ? 0 : 60
+                anchors.leftMargin: splitZone2.state === "addClass" ? 0 : 60
                 anchors.top: parent.top
                 anchors.topMargin: 102
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                visible: showUserInsertOverlay
-                onPressed: showAlertPopup(2)
-            }
-
-            StudentInsertOverlay {
-                id: userInsertOverlay
-                width: parent.width
-                height: parent.height - (searchArea.height + 70)
-                anchors.top: parent.top
-                anchors.topMargin: 102
-                visible: showUserInsertOverlay
-                onVisibleChanged: {
-                    if(visible) {
-                        disableOnEditMode = true
-                        details.infoOverlayVisible = false
-                    }
-                    else
-                        disableOnEditMode = false
-                }
+                source: "Metrics.qml"
             }
 
             states: [
                 State {
-                    name: "addGroup"
+                    name: "addClass"
                     PropertyChanges { target: userArea; opacity: 0; }
+                    PropertyChanges { target: details; source: "AddStudent.qml"; }
                     AnchorChanges { target: details; anchors.left: userArea.left ; }
                 },
                 State {
-                    name: "closeGroup"
+                    name: "showstudentdetails"
                     PropertyChanges { target: userArea; opacity: 1; }
+                    PropertyChanges { target: details; source: "StudentDetails.qml"; }
+                    AnchorChanges { target: details; anchors.left: userArea.right ; }
+                },
+                State {
+                    name: "metrics"
+                    PropertyChanges { target: userArea; opacity: 1; }
+                    PropertyChanges { target: details; source: "Metrics.qml"; }
                     AnchorChanges { target: details; anchors.left: userArea.right ; }
                 }
             ]
             transitions: Transition {
-                NumberAnimation { properties: "opacity"; duration: 250 }
-                AnchorAnimation { duration: 250 }
+                    ParallelAnimation {
+                        NumberAnimation { properties: "opacity"; duration: 250 }
+                        AnchorAnimation { duration: 250 }
+                    }
+
             }
         }
     }

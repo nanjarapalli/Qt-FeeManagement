@@ -9,19 +9,11 @@
         <file>Framework/FWSlider.qml</file>
         <file>Framework/FWTheme.qml</file>
         <file>Framework/qmldir</file>
-        <file>src/Alert.qml</file>
         <file>src/Footer.qml</file>
-        <file>src/Info.qml</file>
-        <file>src/InfoOverlay.qml</file>
-        <file>src/InfoSortDetails.qml</file>
-        <file>src/InfoSortTitle.qml</file>
         <file>src/Navigation.qml</file>
         <file>src/NavigationDelegate.qml</file>
         <file>src/SearchBar.qml</file>
         <file>src/FeeManagement.qml</file>
-        <file>src/InfoStudentDetail.qml</file>
-        <file>src/InfoStudentEdit.qml</file>
-        <file>src/InfoStudentList.qml</file>
         <file>src/Student.qml</file>
         <file>src/StudentArea.qml</file>
         <file>src/StudentDragDrop.qml</file>
@@ -31,5 +23,8 @@
         <file>main.qml</file>
         <file>src/ContentArea.qml</file>
         <file>src/Database.js</file>
+        <file>src/AddStudent.qml</file>
+        <file>src/Metrics.qml</file>
+        <file>src/StudentDetails.qml</file>
     </qresource>
 </RCC>
