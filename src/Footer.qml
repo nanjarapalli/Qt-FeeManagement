@@ -26,4 +26,18 @@ Rectangle {
             Qt.quit()
         }
     }
+
+    FWButton {
+        text: "New Student"
+        anchors.right: cancelBtn.left
+        anchors.rightMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
+        enabled: !disableOnEditMode
+        onButtonClicked: {
+            mainArea.addNewGroup = !mainArea.addNewGroup
+//            JS.dbInsert("26/12/2018", "descInputtext", "20")
+//            JS.dbReadAll()
+//            console.error("XXXXXXXXXXXXXXX onButtonClicked Read DB: "+ JSON.stringify(userModel))
+        }
+    }
 }

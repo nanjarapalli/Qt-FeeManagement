@@ -16,7 +16,11 @@ Item {
         }
     }
 
-    InfoSortDetails {
+//    InfoSortDetails {
+//        anchors.fill: parent
+//    }
+
+    AddStudent {
         anchors.fill: parent
     }
 

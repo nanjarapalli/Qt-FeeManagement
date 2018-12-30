@@ -14,7 +14,7 @@ ColumnLayout {
     signal removeClicked()
     signal cancelClicked()
 
-    // Consession
+    // Name
     RowLayout {
         width: root.width
         Layout.minimumHeight: 40
@@ -36,7 +36,7 @@ ColumnLayout {
             Layout.fillWidth: true
             Layout.minimumHeight: 30
             border.width: FWTheme.inputText.borderWidth
-            border.color: FWTheme.inputText.borderColorDefault//isGroupExist(nameInputText.text) ? FWTheme.inputText.borderColorError : FWTheme.inputText.borderColorDefault
+            border.color: FWTheme.inputText.borderColorDefault
             radius: FWTheme.inputText.borderRadius
             color: FWTheme.inputText.backgroundColor
 

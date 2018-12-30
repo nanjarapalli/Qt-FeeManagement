@@ -1,6 +1,8 @@
 import QtQuick 2.9
 import QtQuick.Window 2.2
+import QtQuick.LocalStorage 2.0
 import "./src"
+import "./src/Database.js" as JS
 
 Window {
     id: root
@@ -14,4 +16,7 @@ Window {
         anchors.fill: parent
     }
 
+    Component.onCompleted: {
+        JS.dbInit()
+    }
 }

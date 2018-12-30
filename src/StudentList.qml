@@ -44,7 +44,7 @@ Item {
             height: 40
             borderBottom: index === (usersListView.count - 1) ? false : true
             userName: name//"Tom Schuhmacher"
-            groupImg: icon
+            groupImg: "qrc:/Images/ico-user.png"
             MouseArea {
                 anchors.fill: parent
                 onPressed: {
@@ -144,7 +144,7 @@ Item {
         groups: [
             DelegateModelGroup { name: "selected" }
         ]
-        model: sortFilterProxyModel_Codes
+        model: userModel
         delegate: userDelegate
     }
 

@@ -19,7 +19,7 @@ Item {
         elide: Text.ElideRight
     }
 
-    UserFilter {
+    StudentFilter {
         id: filter
         width: parent.width - 30
         anchors.left: parent.left
@@ -29,7 +29,7 @@ Item {
         lineOpacity: 0
     }
 
-    UserList {
+    StudentList {
         id: userList
         width: parent.width - 30
         anchors.left: filter.left

@@ -1,6 +1,8 @@
 import QtQuick 2.3
 import QtQuick.Window 2.2
-//import "Framework"
+import QtQuick.LocalStorage 2.0
+import "../Framework"
+import "Database.js" as JS
 
 Item {
     id: root
@@ -134,7 +136,7 @@ Item {
     }
 
     ListModel {
-        id: userModel
+        id: userModel1
         property string sortColumnName: ""
         property string order: "desc" //set to either asc or desc
         ListElement{name: "Student 1"; icon: "qrc:/Images/ico-user.png"}
@@ -171,5 +173,12 @@ Item {
         ListElement {name: "Class VIII"}
         ListElement {name: "Class IX"}
         ListElement {name: "Class X"}
+    }
+
+    ListModel {
+        id: userModel
+        property string sortColumnName: ""
+        property string order: "desc" //set to either asc or desc
+        Component.onCompleted: JS.dbReadAll()
     }
 }

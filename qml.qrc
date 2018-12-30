@@ -31,5 +31,6 @@
         <file>main.qml</file>
         <file>src/ContentArea.qml</file>
         <file>src/Database.js</file>
+        <file>src/AddStudent.qml</file>
     </qresource>
 </RCC>

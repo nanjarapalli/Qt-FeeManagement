@@ -178,7 +178,7 @@ Item {
             delegate: Item {
                 width: 124
                 height: 24
-                CRadioButton {
+                FWRadioButton {
                     id: selectBtn
                     anchors.left: parent.left
                     anchors.leftMargin: 10
