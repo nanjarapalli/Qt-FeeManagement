@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f883360_05294b5c",
+        "filename": "src/Footer.qml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-30T18:27:58Z",
+      "side": 1,
+      "message": "Why do you what to set the color here? For cancel button we do not set any color it is taken care inside FWButton ?",
+      "revId": "3d2d8052d66130020deb86248b2f24005d1c3bae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c936f6d3_113a22a9",
+        "filename": "src/Footer.qml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-30T18:27:58Z",
+      "side": 1,
+      "message": "add space between id: and allClass",
+      "revId": "3d2d8052d66130020deb86248b2f24005d1c3bae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce6ab3db_5415bc3e",
+        "filename": "src/Footer.qml",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1015530
+      },
+      "writtenOn": "2018-12-30T18:27:58Z",
+      "side": 1,
+      "message": "sane here space is missing",
+      "revId": "3d2d8052d66130020deb86248b2f24005d1c3bae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
