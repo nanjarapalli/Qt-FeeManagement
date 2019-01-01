@@ -38,6 +38,18 @@ Rectangle {
         }
     }
 
+    FWButton{
+        id: allClass
+        anchors.left: parent.left
+        anchors.leftMargin: 150
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("Add Class")
+        inActive: disableOnEditMode
+        onButtonClicked: {
+            console.log("Add Class clicked")
+        }
+    }
+
     FWButton {
         text: "New Student"
         anchors.right: cancelBtn.left
@@ -47,4 +59,5 @@ Rectangle {
         onButtonClicked: {
             mainArea.uistate = "addClass"
         }
-    }}
+    }
+}
